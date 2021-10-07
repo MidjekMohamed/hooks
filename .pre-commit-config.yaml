@@ -13,3 +13,10 @@ repos :
     language : system
     stages: [push]
     args: [pre_push_tests.py]
+
+  - id : MyTests3
+    name : Run my tests3
+    entry : python 
+    language : system
+    stages: [commit-msg]
+    args: [commit_msg_tests.py]
